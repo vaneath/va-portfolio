@@ -1,5 +1,7 @@
 <template>
-  <nav class="bg-gray-800 backdrop-filter backdrop-blur sticky top-0 z-40 w-full">
+  <nav
+    class="bg-gray-800 backdrop-filter backdrop-blur sticky top-0 z-40 w-full"
+  >
     <div
       class="max-w-7xl border-l border-r border-dashed border-gray-700 mx-auto px-2 sm:px-4 lg:px-8"
     >
@@ -44,7 +46,12 @@
               aria-label="Main menu"
               aria-haspopup="true"
             >
-              <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+              <svg
+                class="h-6 w-6"
+                stroke="currentColor"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -55,7 +62,9 @@
             </button>
           </div>
         </div>
-        <div class="hidden md:flex flex-row space-x-2 items-center justify-center">
+        <div
+          class="hidden md:flex flex-row space-x-2 items-center justify-center"
+        >
           <a
             v-if="config.blog.enabled"
             class="text-gray-300 hover:text-white"
