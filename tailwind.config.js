@@ -7,7 +7,11 @@ export default {
     "./plugins/**/*.{js,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "hot-pink": "#fd2d78",
+      },
+    },
   },
   plugins: [],
 };
