@@ -2,16 +2,18 @@ export default defineAppConfig({
   name: "vaneath",
   blog: {
     enabled: true,
-    title: "Blog",
-    description: "My blog",
-    url: "https://blog.vaneath.com",
+    route: "/blogs",
+    slug: "blogs",
   },
   domain: "vaneath.com",
-  image:
-    "https://cdn.pixabay.com/photo/2023/07/23/20/09/female-8145765_1280.jpg",
   email: "vaneathzz@gmail.com",
   heroSection: {
     enabled: true,
+    blogToggle: {
+      enabled: true,
+      leftText: "i write blogs",
+      rightText: "take a look",
+    },
     title: "Hi, I'm Vaneath",
     description: "I'm a full-stack developer",
     workedAt: {
@@ -29,5 +31,21 @@ export default defineAppConfig({
         },
       ],
     },
+  },
+  homeRoute: "/",
+  image:
+    "https://cdn.pixabay.com/photo/2023/07/23/20/09/female-8145765_1280.jpg",
+  project: {
+    enabled: false,
+    route: "/projects",
+    slug: "projects",
+  },
+  resume: {
+    enabled: false,
+    route: "/resume",
+    slug: "resume",
+  },
+  firebase: {
+    enabled: false,
   },
 });
