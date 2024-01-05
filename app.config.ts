@@ -45,7 +45,27 @@ export default defineAppConfig({
     route: "/resume",
     slug: "resume",
   },
-  firebase: {
-    enabled: false,
+  social: {
+    enabled: true,
+    facebook: {
+      enabled: true,
+      url: "vaneathzz",
+    },
+    github: {
+      enabled: true,
+      url: "vaneath",
+    },
+    instagram: {
+      enabled: true,
+      url: "va_neath",
+    },
+    linkedin: {
+      enabled: true,
+      url: "vaneath",
+    },
+    twitter: {
+      enabled: false,
+      url: "",
+    },
   },
 });
