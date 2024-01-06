@@ -1,3 +1,5 @@
 <template>
-  <div>projects</div>
+  <div>
+    <ComingSoon />
+  </div>
 </template>
