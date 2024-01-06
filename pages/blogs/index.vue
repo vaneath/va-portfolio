@@ -1,3 +1,5 @@
 <template>
-  <div>blog</div>
+  <div>
+    <ComingSoon />
+  </div>
 </template>
