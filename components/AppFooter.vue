@@ -2,7 +2,7 @@
   <footer class="bg-gray-800">
     <div class="max-w-7xl border-l border-r border-dashed border-gray-700 mx-auto px-4">
       <div class="pt-5 pb-12 md:flex md:items-center md:justify-between">
-        <div class="flex space-x-6 md:order-2">
+        <div class="flex justify-center space-x-6 md:order-2">
           <a
             v-if="config.social.facebook.enabled"
             target="_blank"
@@ -123,7 +123,7 @@
             </svg>
           </a>
         </div>
-        <p class="mt-8 text-sm leading-6 text-gray-400 md:mt-0 md:order-1">
+        <p class="mt-8 text-sm text-center leading-6 text-gray-400 md:mt-0 md:order-1">
           JUCIY music favors -
           <span class="ceator-preview text-yellow-500 hover:text-hot-pink font-semibold">
             <a
