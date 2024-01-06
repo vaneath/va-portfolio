@@ -2,8 +2,8 @@ export default defineAppConfig({
   name: "vaneath",
   blog: {
     enabled: true,
+    name: "blogs",
     route: "/blogs",
-    slug: "blogs",
   },
   domain: "vaneath.com",
   email: "vaneathzz@gmail.com",
@@ -36,14 +36,14 @@ export default defineAppConfig({
   image:
     "https://cdn.pixabay.com/photo/2023/07/23/20/09/female-8145765_1280.jpg",
   project: {
-    enabled: false,
+    enabled: true,
+    name: "projects",
     route: "/projects",
-    slug: "projects",
   },
   resume: {
     enabled: false,
+    name: "resume",
     route: "/resume",
-    slug: "resume",
   },
   social: {
     enabled: true,

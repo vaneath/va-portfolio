@@ -153,7 +153,7 @@
           JUCIY music favors -
           <span class="ceator-preview text-yellow-500 font-semibold">
             <a
-              class="inline-block md:hidden"
+              class="inline-block"
               target="_blank"
               :href="`https://github.com/${config.social.github.url}`"
               v-text="capitalizeFirstLetter(config.name)"
