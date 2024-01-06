@@ -16,22 +16,23 @@
                 exact
                 :to="config.homeRoute"
                 class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-bold"
-                >home</nuxt-link
               >
+                home
+              </nuxt-link>
               <AppNavLink
                 v-show="config.blog.enabled"
                 :to="config.blog.route"
-                v-text="config.blog.slug"
+                v-text="config.blog.name"
               />
               <AppNavLink
                 v-show="config.project.enabled"
                 :to="config.project.route"
-                v-text="config.project.slug"
+                v-text="config.project.name"
               />
               <AppNavLink
                 v-show="config.resume.enabled"
                 :to="config.resume.route"
-                v-text="config.resume.slug"
+                v-text="config.resume.name"
               />
             </div>
           </div>
@@ -152,21 +153,21 @@
                 :to="config.blog.route"
                 class="flex px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:text-gray-100 hover:bg-gray-600 focus:outline-none focus:text-gray-100 focus:bg-gray-500 transition duration-150 ease-in-out"
                 role="menuitem"
-                >blogs</nuxt-link
-              >
+                v-text="config.blog.name"
+              ></nuxt-link>
               <nuxt-link
                 v-show="config.project.enabled"
                 :to="config.project.route"
                 class="flex px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:text-gray-100 hover:bg-gray-600 focus:outline-none focus:text-gray-100 focus:bg-gray-500 transition duration-150 ease-in-out"
                 role="menuitem"
-                v-text="config.project.slug"
+                v-text="config.project.name"
               ></nuxt-link>
               <nuxt-link
                 v-show="config.resume.enabled"
                 :to="config.resume.route"
                 class="flex px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:text-gray-100 hover:bg-gray-600 focus:outline-none focus:text-gray-100 focus:bg-gray-500 transition duration-150 ease-in-out"
                 role="menuitem"
-                v-text="config.resume.slug"
+                v-text="config.resume.name"
               ></nuxt-link>
             </div>
           </div>
@@ -183,9 +184,6 @@ const mobileMenuOpen = ref(false);
 </script>
 
 <style scoped>
-.nuxt-link-active {
-  @apply bg-gray-900 text-white;
-}
 .backdrop-filter {
   backdrop-filter: blur(15px);
 }
