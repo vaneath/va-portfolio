@@ -5,6 +5,8 @@ export default defineAppConfig({
     name: "blogs",
     route: "/blogs",
   },
+  description:
+    "Hi, I'm Vaneath, a developer, guitarist, musician, programmer. I love to build things and solve problems. I'm currently working at BookMe+ as a junior full-stack developer, and also a student at the Cambodia Academy of Digital Technology.",
   domain: "vaneath.com",
   email: "vaneathzz@gmail.com",
   heroSection: {
@@ -15,8 +17,6 @@ export default defineAppConfig({
       leftText: "i write blogs",
       rightText: "take a look",
     },
-    description:
-      "Hi, I'm Vaneath, a developer, guitarist, musician, programmer. I love to build things and solve problems. I'm currently working at BookMe+ as a junior full-stack developer, and also a student at the Cambodia Academy of Digital Technology.",
     workedAt: {
       enabled: true,
       meta: [
@@ -34,7 +34,7 @@ export default defineAppConfig({
     },
   },
   homeRoute: "/",
-  image: "/images/hero-section/gojo.jpg",
+  image: "/images/vaneath.png",
   project: {
     enabled: true,
     name: "projects",
