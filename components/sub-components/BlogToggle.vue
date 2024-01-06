@@ -4,7 +4,7 @@
     class="group inline-flex hover:bg-black items-center text-white bg-gray-900 rounded-full p-0.5 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200"
   >
     <span
-      class="px-3 py-0.5 text-white text-xs font-semibold leading-5 tracking-wide bg-indigo-600 rounded-full"
+      class="px-3 py-0.5 text-white text-xs font-semibold leading-5 tracking-wide bg-yellow-600 rounded-full"
       v-text="config.heroSection.blogToggle.leftText"
     ></span>
     <span

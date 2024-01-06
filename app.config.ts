@@ -9,13 +9,14 @@ export default defineAppConfig({
   email: "vaneathzz@gmail.com",
   heroSection: {
     enabled: true,
+    aboutMe: true,
     blogToggle: {
       enabled: true,
       leftText: "i write blogs",
       rightText: "take a look",
     },
-    title: "Hi, I'm Vaneath",
-    description: "I'm a full-stack developer",
+    description:
+      "Hi, I'm Vaneath, a developer, guitarist, musician, programmer. I love to build things and solve problems. I'm currently working at BookMe+ as a junior full-stack developer, and also a student at the Cambodia Academy of Digital Technology.",
     workedAt: {
       enabled: true,
       meta: [
