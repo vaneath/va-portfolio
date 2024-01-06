@@ -34,8 +34,7 @@ export default defineAppConfig({
     },
   },
   homeRoute: "/",
-  image:
-    "https://cdn.pixabay.com/photo/2023/07/23/20/09/female-8145765_1280.jpg",
+  image: "/images/hero-section/gojo.jpg",
   project: {
     enabled: true,
     name: "projects",

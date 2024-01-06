@@ -23,7 +23,7 @@
                   v-if="config.heroSection.workedAt.enabled"
                   class="mt-5 w-full sm:mx-auto lg:ml-0"
                 >
-                  <div class="flex flex-wrap space-x-1 items-center md:space-x-10">
+                  <div class="flex flex-wrap space-x-1 justify-center lg:justify-start items-center md:space-x-10">
                     <div
                       v-for="(firm, index) in config.heroSection.workedAt.meta"
                       :key="index"
@@ -49,7 +49,11 @@
               <div
                 class="flex-shrink-0 w-full sm:mx-auto flex flex-1 items-center justify-center rounded-lg sm:overflow-hidden"
               >
-                <img class="rounded-md h-80" :src="config.image" :alt="config.name" />
+                <img
+                  class="rounded-md h-40 lg:h-80"
+                  :src="config.image"
+                  :alt="config.name"
+                />
               </div>
             </div>
           </div>
