@@ -1,12 +1,12 @@
 <template>
   <div class="bg-gray-800 overflow-hidden">
-    <HeroSection v-if="config.heroSection.enabled" />
-    <GithubContribution />
+    <HeroSection v-if="home.heroSection.enabled" />
+    <GithubContribution v-if="home.githubContributions.enabled" />
   </div>
 </template>
 
 <script setup>
-const config = useAppConfig();
+const home = useAppConfig().home;
 
 useSeoMeta({
   title: "home",

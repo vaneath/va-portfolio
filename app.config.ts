@@ -1,3 +1,5 @@
+import home from "./config/home.config";
+
 export default defineAppConfig({
   name: "vaneath",
   blog: {
@@ -9,30 +11,7 @@ export default defineAppConfig({
     "Hi, I'm Vaneath, a developer, guitarist, musician, programmer. I love to build things and solve problems. I'm currently working at BookMe+ as a junior full-stack developer, and also a student at the Cambodia Academy of Digital Technology.",
   domain: "vaneath.com",
   email: "vaneathzz@gmail.com",
-  heroSection: {
-    enabled: true,
-    aboutMe: true,
-    blogToggle: {
-      enabled: true,
-      leftText: "i write blogs",
-      rightText: "take a look",
-    },
-    workedAt: {
-      enabled: true,
-      meta: [
-        {
-          name: "BookMe+",
-          src: "/images/work-at/bookmeplus.png",
-          url: "https://bookme.plus",
-        },
-        {
-          name: "BookMeBus",
-          src: "/images/work-at/bookmebus.jpg",
-          url: "https://bookmebus.com",
-        },
-      ],
-    },
-  },
+  home: home,
   homeRoute: "/",
   image: "/images/vaneath.png",
   project: {
