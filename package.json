@@ -13,6 +13,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.16",
     "axios": "^1.6.4",
+    "github-calendar": "^2.3.2",
     "nuxt": "^3.9.0",
     "postcss": "^8.4.32",
     "prettier": "^3.1.1",

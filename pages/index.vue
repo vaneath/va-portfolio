@@ -1,6 +1,7 @@
 <template>
-  <div>
+  <div class="bg-gray-800 overflow-hidden">
     <HeroSection v-if="config.heroSection.enabled" />
+    <GithubContribution />
   </div>
 </template>
 

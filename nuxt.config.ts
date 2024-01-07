@@ -2,10 +2,8 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      titleTemplate: "vaneath - %s",
       charset: "utf-8",
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
-      viewport: "width=device-width, initial-scale=1",
       meta: [
         {
           key: "description",
@@ -14,6 +12,8 @@ export default defineNuxtConfig({
             "Hi, I'm Vaneath, a developer, guitarist, musician, programmer. I love to build things and solve problems. I'm currently working at BookMe+ as a junior full-stack developer, and also a student at the Cambodia Academy of Digital Technology.",
         },
       ],
+      titleTemplate: "vaneath - %s",
+      viewport: "width=device-width, initial-scale=1",
     },
   },
   devtools: { enabled: true },
