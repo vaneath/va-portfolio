@@ -8,7 +8,7 @@
     <div class="grid place-items-center w-full overflow-scroll">
       <div class="w-96 sm:w-full lg:w-10/12">
         <img
-          class="w-full"
+          class="w-full h-16 sm:h-auto"
           src="https://ghchart.rshah.org/vaneath"
           alt="Vaneath's Github chart"
         />

@@ -5,11 +5,11 @@
   >
     <span
       class="px-3 py-0.5 text-white text-xs font-semibold leading-5 tracking-wide bg-yellow-600 rounded-full"
-      v-text="config.heroSection.blogToggle.leftText"
+      v-text="config.home.heroSection.blogToggle.leftText"
     ></span>
     <span
       class="ml-4 text-xs font-semibold"
-      v-text="config.heroSection.blogToggle.rightText"
+      v-text="config.home.heroSection.blogToggle.rightText"
     ></span>
     <svg
       class="transition duration-500 transform block group-hover:rotate-180 hover-arrow ml-2 w-5 h-5 text-gray-500"

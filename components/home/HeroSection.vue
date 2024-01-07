@@ -12,22 +12,22 @@
               <div>
                 <div class="mb-10" id="typewriter"></div>
                 <BlogToggle v-if="config.blog.enabled" />
-                <AboutMe v-if="config.heroSection.aboutMe" />
+                <AboutMe v-if="config.home.heroSection.aboutMe" />
                 <p
-                  v-if="config.heroSection.workedAt.enabled"
+                  v-if="config.home.heroSection.workedAt.enabled"
                   class="mt-8 text-sm text-white lowercase tracking-wide font-semibold sm:mt-10"
                 >
                   Worked at
                 </p>
                 <div
-                  v-if="config.heroSection.workedAt.enabled"
+                  v-if="config.home.heroSection.workedAt.enabled"
                   class="mt-5 w-full sm:mx-auto lg:ml-0"
                 >
                   <div
                     class="flex flex-wrap space-x-1 justify-center lg:justify-start items-center md:space-x-10"
                   >
                     <div
-                      v-for="(firm, index) in config.heroSection.workedAt.meta"
+                      v-for="(firm, index) in config.home.heroSection.workedAt.meta"
                       :key="index"
                     >
                       <a
