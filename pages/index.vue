@@ -6,6 +6,9 @@
 
 <script setup>
 const config = useAppConfig();
-</script>
 
-<style></style>
+useSeoMeta({
+  title: "home",
+  description: "I'm Vaneath, as a web developer, I build web applications and websites.",
+});
+</script>

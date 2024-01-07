@@ -41,7 +41,7 @@ export default defineAppConfig({
     route: "/projects",
   },
   resume: {
-    enabled: false,
+    enabled: true,
     name: "resume",
     route: "/resume",
   },
