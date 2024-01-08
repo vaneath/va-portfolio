@@ -28,23 +28,23 @@ export default defineAppConfig({
     enabled: true,
     facebook: {
       enabled: true,
-      url: "vaneathzz",
+      username: "vaneathzz",
     },
     github: {
       enabled: true,
-      url: "vaneath",
+      username: "vaneath",
     },
     instagram: {
       enabled: true,
-      url: "va_neath",
+      username: "va_neath",
     },
     linkedin: {
       enabled: true,
-      url: "vaneath",
+      username: "vaneath",
     },
     twitter: {
       enabled: false,
-      url: "",
+      username: "",
     },
   },
 });
