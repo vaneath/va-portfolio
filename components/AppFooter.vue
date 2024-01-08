@@ -1,15 +1,13 @@
 <template>
   <footer class="bg-gray-800">
-    <div
-      class="max-w-7xl border-l border-r border-dashed border-gray-700 mx-auto px-4"
-    >
+    <div class="max-w-7xl border-l border-r border-dashed border-gray-700 mx-auto px-4">
       <div class="pt-5 pb-12 md:flex md:items-center md:justify-between">
         <div class="flex justify-center space-x-6 md:order-2">
           <a
             v-if="config.social.facebook.enabled"
             target="_blank"
             rel="noreferrer"
-            :href="`https://facebook.com/${config.social.facebook.url}`"
+            :href="`https://facebook.com/${config.social.facebook.username}`"
             class="text-gray-400 hover:text-gray-300"
           >
             <span class="sr-only">Facebook</span>
@@ -30,7 +28,7 @@
             v-if="config.social.instagram.enabled"
             target="_blank"
             rel="noreferrer"
-            :href="`https://instagram.com/${config.social.instagram.url}`"
+            :href="`https://instagram.com/${config.social.instagram.username}`"
             class="text-gray-400 hover:text-gray-300"
           >
             <span class="sr-only">Instagram</span>
@@ -51,7 +49,7 @@
             v-if="config.social.twitter.enabled"
             target="_blank"
             rel="noreferrer"
-            :href="`https://twitter.com/${config.social.twitter.url}`"
+            :href="`https://twitter.com/${config.social.twitter.username}`"
             class="text-gray-400 hover:text-gray-300"
           >
             <span class="sr-only">Twitter</span>
@@ -63,9 +61,7 @@
               xmlns:svgjs="http://svgjs.com/svgjs"
               viewBox="0 0 16 16"
             >
-              <g
-                transform="matrix(0.6666666666666666,0,0,0.6666666666666666,0,0)"
-              >
+              <g transform="matrix(0.6666666666666666,0,0,0.6666666666666666,0,0)">
                 <path
                   d="M23.32,6.44c0.212-0.177,0.241-0.492,0.065-0.704c-0.068-0.082-0.161-0.14-0.265-0.166l-0.79-0.2 c-0.268-0.067-0.431-0.339-0.364-0.606C21.974,4.731,21.986,4.7,22,4.67l0.44-0.89c0.12-0.249,0.015-0.548-0.233-0.668 C22.099,3.06,21.976,3.049,21.86,3.08l-2,0.56c-0.151,0.044-0.314,0.014-0.44-0.08c-0.865-0.649-1.918-1-3-1c-2.761,0-5,2.239-5,5 l0,0v0.36c0.001,0.127-0.094,0.235-0.22,0.25C8.39,8.5,5.7,7.07,2.8,3.73c-0.128-0.142-0.325-0.2-0.51-0.15 C2.124,3.656,2.013,3.817,2,4C1.599,5.645,1.761,7.377,2.46,8.92c0.062,0.123,0.013,0.274-0.11,0.336 C2.303,9.279,2.251,9.288,2.2,9.28L1.08,9.06C0.807,9.016,0.551,9.202,0.507,9.474C0.498,9.533,0.499,9.592,0.51,9.65 c0.175,1.555,1.047,2.945,2.37,3.78c0.124,0.06,0.176,0.21,0.116,0.334c-0.025,0.051-0.065,0.092-0.116,0.116l-0.53,0.21 c-0.256,0.103-0.381,0.394-0.278,0.65c0.005,0.014,0.011,0.027,0.018,0.04c0.595,1.302,1.791,2.229,3.2,2.48 c0.13,0.047,0.197,0.191,0.15,0.32c-0.025,0.07-0.08,0.124-0.15,0.15C3.93,18.292,2.471,18.575,1,18.56 c-0.276-0.055-0.545,0.124-0.6,0.4s0.124,0.545,0.4,0.6l0,0c2.548,1.208,5.321,1.866,8.14,1.93c2.479,0.038,4.915-0.658,7-2 c3.484-2.326,5.571-6.241,5.56-10.43V8.19c0.001-0.147,0.067-0.286,0.18-0.38L23.32,6.44z"
                   stroke="none"
@@ -81,7 +77,7 @@
             v-if="config.social.github.enabled"
             target="_blank"
             rel="noreferrer"
-            :href="`https://github.com/${config.social.github.url}`"
+            :href="`https://github.com/${config.social.github.username}`"
             class="text-gray-400 hover:text-gray-300"
           >
             <span class="sr-only">GitHub</span>
@@ -102,7 +98,7 @@
             v-if="config.social.linkedin.enabled"
             target="_blank"
             rel="noreferrer"
-            :href="`https://linkedin.com/in/${config.social.linkedin.url}`"
+            :href="`https://linkedin.com/in/${config.social.linkedin.username}`"
             class="text-gray-400 hover:text-gray-300"
           >
             <span class="sr-only">LinkedIn</span>
@@ -114,9 +110,7 @@
               xmlns:svgjs="http://svgjs.com/svgjs"
               viewBox="0 0 16 16"
             >
-              <g
-                transform="matrix(0.6666666666666666,0,0,0.6666666666666666,0,0)"
-              >
+              <g transform="matrix(0.6666666666666666,0,0,0.6666666666666666,0,0)">
                 <path
                   d="M2.5,8.5h4C6.776,8.5,7,8.724,7,9v13c0,0.276-0.224,0.5-0.5,0.5h-4C2.224,22.5,2,22.276,2,22V9C2,8.724,2.224,8.5,2.5,8.5z M4.48,1.5c1.37,0,2.48,1.119,2.48,2.5S5.85,6.5,4.48,6.5S2,5.381,2,4S3.11,1.5,4.48,1.5z M18.5,22.5h3c0.276,0,0.5-0.224,0.5-0.5 v-8.4C22,9.83,19.87,8,16.89,8c-1.189-0.043-2.34,0.418-3.17,1.27c-0.148,0.171-0.407,0.19-0.578,0.042C13.051,9.233,13,9.12,13,9 c0-0.276-0.224-0.5-0.5-0.5h-3C9.224,8.5,9,8.724,9,9v13c0,0.276,0.224,0.5,0.5,0.5h3c0.276,0,0.5-0.224,0.5-0.5v-7.5 c0-1.381,1.119-2.5,2.5-2.5s2.5,1.119,2.5,2.5V22C18,22.276,18.224,22.5,18.5,22.5z"
                   stroke="none"
@@ -129,17 +123,13 @@
             </svg>
           </a>
         </div>
-        <p
-          class="mt-8 text-sm text-center leading-6 text-gray-400 md:mt-0 md:order-1"
-        >
+        <p class="mt-8 text-sm text-center leading-6 text-gray-400 md:mt-0 md:order-1">
           JUCIY music favors -
-          <span
-            class="ceator-preview text-yellow-500 hover:text-hot-pink font-semibold"
-          >
+          <span class="ceator-preview text-yellow-500 hover:text-hot-pink font-semibold">
             <a
               class="inline-block"
               target="_blank"
-              :href="`https://github.com/${config.social.github.url}`"
+              :href="`https://github.com/${config.social.github.username}`"
               v-text="capitalizeFirstLetter(config.name)"
             >
             </a>

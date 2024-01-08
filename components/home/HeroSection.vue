@@ -1,7 +1,7 @@
 <template>
-  <div class="relative bg-gray-800 overflow-hidden min-h-screen">
+  <div class="relative bg-gray-800 overflow-hidden">
     <div class="relative">
-      <main class="">
+      <main>
         <div
           class="mx-auto py-8 max-w-7xl border-l border-r border-dashed border-gray-700"
         >
@@ -13,38 +13,7 @@
                 <div class="mb-10" id="typewriter"></div>
                 <BlogToggle v-if="config.blog.enabled" />
                 <AboutMe v-if="config.home.heroSection.aboutMe" />
-                <p
-                  v-if="config.home.heroSection.workedAt.enabled"
-                  class="mt-8 text-sm text-white lowercase tracking-wide font-semibold sm:mt-10"
-                >
-                  Worked at
-                </p>
-                <div
-                  v-if="config.home.heroSection.workedAt.enabled"
-                  class="mt-5 w-full sm:mx-auto lg:ml-0"
-                >
-                  <div
-                    class="flex flex-wrap space-x-1 justify-center lg:justify-start items-center md:space-x-10"
-                  >
-                    <div
-                      v-for="(firm, index) in config.home.heroSection.workedAt.meta"
-                      :key="index"
-                    >
-                      <a
-                        :href="firm.url"
-                        target="_blank"
-                        rel="noreferrer"
-                        class="flex items-center justify-center"
-                      >
-                        <img
-                          :src="firm.src"
-                          class="h-8 rounded-sm sm:h-9"
-                          :alt="firm.name"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
+                <WorkedAt v-if="config.home.heroSection.workedAt.enabled" />
               </div>
             </div>
             <div class="mt-8 px-5 sm:mt-16 lg:mt-0 lg:col-span-6">
