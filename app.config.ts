@@ -1,4 +1,5 @@
 import home from "./config/home.config";
+import project from "./config/project.config";
 
 export default defineAppConfig({
   name: "vaneath",
@@ -14,11 +15,7 @@ export default defineAppConfig({
   home: home,
   homeRoute: "/",
   image: "/images/vaneath.png",
-  project: {
-    enabled: true,
-    name: "projects",
-    route: "/projects",
-  },
+  project: project,
   resume: {
     enabled: true,
     name: "resume",
