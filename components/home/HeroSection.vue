@@ -3,7 +3,7 @@
     <div class="relative">
       <main>
         <div
-          class="mx-auto py-8 max-w-7xl border-l border-r border-dashed border-gray-700"
+          class="mx-auto py-8 max-w-7xl"
         >
           <div data-aos="zoom-in" class="lg:grid lg:grid-cols-12">
             <div
