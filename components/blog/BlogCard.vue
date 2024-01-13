@@ -49,21 +49,6 @@ import type { set } from 'nuxt/dist/app/compat/capi';
               author name
             </a>
           </p>
-          <!-- <div class="flex text-xs text-gray-300">
-            <time :datetime="post.createdAt">
-              {{
-                new Date(post.createdAt).toLocaleDateString("en-US", {
-                  year: "numeric",
-                  month: "short",
-                  day: "numeric",
-                })
-              }}
-            </time>
-            <span class="mx-1"> &middot; </span>
-            <span>
-              reading time
-            </span>
-          </div> -->
         </div>
       </div>
     </div>

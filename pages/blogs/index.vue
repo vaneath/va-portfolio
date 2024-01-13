@@ -34,6 +34,7 @@
 </template>
 
 <script setup>
+const { data: blogs } = await useAsyncData('blogs', () => queryContent('/blog').only(['title']).find())
 useSeoMeta({
   title: "blogs",
   description:

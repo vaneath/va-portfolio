@@ -173,13 +173,3 @@ const config = useAppConfig();
 
 const mobileMenuOpen = ref(false);
 </script>
-
-<style scoped>
-.nuxt-link-exact-active {
-  color: #fff;
-  background-color: #1f2937;
-}
-.backdrop-filter {
-  backdrop-filter: blur(15px);
-}
-</style>

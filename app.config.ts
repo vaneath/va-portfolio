@@ -3,7 +3,7 @@ import home from "./config/home.config";
 export default defineAppConfig({
   name: "vaneath",
   blog: {
-    enabled: true,
+    enabled: false,
     name: "blogs",
     route: "/blogs",
   },
