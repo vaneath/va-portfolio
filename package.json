@@ -11,6 +11,7 @@
     "format": "prettier --write \"**/*.+(js|vue)\""
   },
   "dependencies": {
+    "@nuxt/content": "^2.10.0",
     "autoprefixer": "^10.4.16",
     "axios": "^1.6.4",
     "github-calendar": "^2.3.2",

@@ -1,15 +1,16 @@
 <template>
-  <div class="max-w-7xl mx-auto border-gray-700 border-dashed border-l border-r min-h-screen">
+  <div class="max-w-7xl mx-auto min-h-screen">
     <div class="dark antialiased text-gray-200">
       <div class="px-4 py-4 max-w-5xl mx-auto sm:px-6 lg:px-8">
         <article data-aos="fade-up">
           <div class="space-y-9">
             <div
-              class="py-0.5 border-t border-b border-dashed border-gray-700 flex items-center justify-between"
+              class="py-0.5 flex items-center justify-between"
             >
               <div class="text-yellow-700 font-bold">
                 <nuxt-link class="hover:text-yellow-500" to="/blogs">
-                  blog header</nuxt-link>
+                  blog header
+                </nuxt-link>
                 <span class="text-gray-700">/</span> category
               </div>
               <div>
@@ -58,7 +59,7 @@
                     </h1>
                   </div>
 
-                  <dl class="">
+                  <dl>
                     <div>
                       <dt class="sr-only">Published on</dt>
                       <dd class="text-xs font-medium text-gray-500">
@@ -66,10 +67,11 @@
                           target="_blank"
                           rel="noreferrer"
                           href="https://twitter.com/vaneath"
-                          ><span class="text-yellow-600 hover:text-yellow-300">{{
-                            config.name
-                          }}</span></a
-                        >
+                          >
+                            <span class="text-yellow-600 hover:text-yellow-300">
+                              {{config.name}}
+                            </span>
+                          </a>
                         <span class="mx-1"> &middot; </span>
                         reading time
                       </dd>
@@ -82,6 +84,10 @@
                 class="prose dark:prose-dark break-words my-4 prose-sm max-w-4xl mx-auto"
               >
                 content here
+
+                <ContentDoc>
+                  <ContentRenderer />
+                </ContentDoc>
               </div>
             </div>
           </div>
@@ -92,12 +98,10 @@
 </template>
 
 <script setup>
-const config = useAppConfig();
+  const config = useAppConfig();
 
-useSeoMeta({
+  useSeoMeta({
   title: "post title",
   description: "post description",
 });
-
-//fetch from content folder
 </script>
