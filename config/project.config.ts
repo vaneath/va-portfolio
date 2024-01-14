@@ -3,13 +3,7 @@ const project = {
   enabled: true,
   name: "projects",
   route: "/projects",
-  techs: [
-    "all",
-    "aws",
-    "laravel",
-    "nuxt",
-    "vue",
-  ],
+  techs: ["all", "aws", "django", "hostinger", "laravel", "nuxt", "vue"],
   title: "Projects",
 };
 
