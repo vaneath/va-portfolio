@@ -1,8 +1,8 @@
 <template>
-  <nav class="bg-gray-800 backdrop-filter backdrop-blur sticky top-0 z-40 w-full">
-    <div
-      class="px-2 sm:px-4 lg:px-8"
-    >
+  <nav
+    class="bg-gray-800 backdrop-filter backdrop-blur sticky top-0 z-40 w-full"
+  >
+    <div class="px-2 sm:px-4 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
         <div class="flex items-center px-2 lg:px-0">
           <nuxt-link to="/" class="flex-shrink-0">
@@ -45,7 +45,12 @@
               aria-label="Main menu"
               aria-haspopup="true"
             >
-              <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+              <svg
+                class="h-6 w-6"
+                stroke="currentColor"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -56,7 +61,9 @@
             </button>
           </div>
         </div>
-        <div class="hidden md:flex flex-row space-x-2 items-center justify-center">
+        <div
+          class="hidden md:flex flex-row space-x-2 items-center justify-center"
+        >
           <a
             v-if="config.blog.enabled"
             class="text-gray-300 hover:text-white"

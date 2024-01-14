@@ -2,9 +2,7 @@
   <div class="relative bg-gray-800 overflow-hidden">
     <div class="relative">
       <main>
-        <div
-          class="mx-auto py-8 max-w-7xl"
-        >
+        <div class="mx-auto py-8 max-w-7xl">
           <div data-aos="zoom-in" class="lg:grid lg:grid-cols-12">
             <div
               class="px-4 sm:px-6 lg:border-r lg:border-dashed lg:border-gray-700 text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left lg:flex lg:items-center"
@@ -51,17 +49,17 @@ onMounted(() => {
   typewriter
     .pauseFor(2500)
     .typeString(
-      '<h1 class="inline mt-4 text-3xl tracking-tight font-extrabold text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-3xl xl:text-3xl">I like <strong class="mt-4 text-3xl tracking-tight font-extrabold text-yellow-500 sm:mt-5 sm:leading-none lg:mt-6 lg:text-3xl xl:text-3xl">her</strong></h1>'
+      '<h1 class="inline mt-4 text-3xl tracking-tight font-extrabold text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-3xl xl:text-3xl">I like <strong class="mt-4 text-3xl tracking-tight font-extrabold text-yellow-500 sm:mt-5 sm:leading-none lg:mt-6 lg:text-3xl xl:text-3xl">her</strong></h1>',
     )
     .pauseFor(300)
     .deleteChars(3)
     .typeString(
-      '<h1 class="inline mt-4 text-3xl tracking-tight font-extrabold text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-3xl xl:text-3xl"</h1><span class="mt-4 text-3xl tracking-tight font-extrabold text-yellow-500 sm:mt-5 sm:leading-none lg:mt-6 lg:text-3xl xl:text-3xl">music</span> but I got no time for <span class="text-hot-pink">love</span></h1>'
+      '<h1 class="inline mt-4 text-3xl tracking-tight font-extrabold text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-3xl xl:text-3xl"</h1><span class="mt-4 text-3xl tracking-tight font-extrabold text-yellow-500 sm:mt-5 sm:leading-none lg:mt-6 lg:text-3xl xl:text-3xl">music</span> but I got no time for <span class="text-hot-pink">love</span></h1>',
     )
     .pauseFor(300)
     .deleteChars(4)
     .typeString(
-      '<p class="inline mt-4 text-3xl tracking-tight font-extrabold text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-3xl xl:text-3xl">it <span class="text-yellow-500">:(</span></p>'
+      '<p class="inline mt-4 text-3xl tracking-tight font-extrabold text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-3xl xl:text-3xl">it <span class="text-yellow-500">:(</span></p>',
     )
     .pauseFor(1000)
     .start();

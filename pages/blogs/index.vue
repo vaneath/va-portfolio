@@ -27,14 +27,19 @@
       </nav>
     </div>
 
-    <div data-aos="zoom-in" class="mt-5 gap-4 mx-4 grid max-w-none lg:grid-cols-3">
+    <div
+      data-aos="zoom-in"
+      class="mt-5 gap-4 mx-4 grid max-w-none lg:grid-cols-3"
+    >
       <BlogCard />
     </div>
   </div>
 </template>
 
 <script setup>
-const { data: blogs } = await useAsyncData('blogs', () => queryContent('/blog').only(['title']).find())
+const { data: blogs } = await useAsyncData("blogs", () =>
+  queryContent("/blog").only(["title"]).find(),
+);
 useSeoMeta({
   title: "blogs",
   description:

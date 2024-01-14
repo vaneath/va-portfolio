@@ -36,10 +36,8 @@
         data-aos="zoom-in"
         class="mt-5 gap-4 mx-4 grid max-w-none lg:grid-cols-3"
       >
-        <template v-for="project in projects" :key="project">
-          <template v-if="project.techs.includes(currentTech)">
-            <pre>{{ project }}</pre>
-          </template>
+        <template v-for="project in filtterProjects" :key="project._id">
+          <pre>{{ project }}</pre>
         </template>
       </div>
     </section>
@@ -53,22 +51,18 @@ const techs = projectConfig.techs;
 const currentTech = ref(techs[0]);
 
 const { data: projects } = await useAsyncData("projects", () =>
-  queryContent("/projects").find()
+  queryContent("project").find(),
 );
 
-// let myProjects = Object.keys(projects).map((key) => projects[key]);
+const filtterProjects = computed(() => {
+  if (currentTech.value === "all") {
+    return projects.value;
+  }
 
-// console.log(typeof myProjects);
-
-// let filterProjects = computed(() => {
-//   if (currentTech.value === "all") {
-//     return projects;
-//   }
-
-//   return myProjects.filter((project) =>
-//     project.techs.includes(currentTech.value)
-//   );
-// });
+  return projects.value.filter((project) =>
+    project.techs.includes(currentTech.value),
+  );
+});
 
 useSeoMeta({
   title: "projects",

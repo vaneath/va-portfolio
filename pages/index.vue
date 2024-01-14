@@ -10,6 +10,7 @@ const home = useAppConfig().home;
 
 useSeoMeta({
   title: "home",
-  description: "I'm Vaneath, as a web developer, I build web applications and websites.",
+  description:
+    "I'm Vaneath, as a web developer, I build web applications and websites.",
 });
 </script>
