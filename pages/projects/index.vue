@@ -37,7 +37,7 @@
         class="mt-5 gap-4 mx-4 grid max-w-none lg:grid-cols-3"
       >
         <template v-for="project in filtterProjects" :key="project._id">
-          <pre>{{ project }}</pre>
+          <ProjectCard :project="project" />
         </template>
       </div>
     </section>
@@ -51,7 +51,7 @@ const techs = projectConfig.techs;
 const currentTech = ref(techs[0]);
 
 const { data: projects } = await useAsyncData("projects", () =>
-  queryContent("project").find(),
+  queryContent("projects").find(),
 );
 
 const filtterProjects = computed(() => {

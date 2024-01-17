@@ -30,5 +30,8 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  runtimeConfig: {
+    multiAvatarApiKey: "HyN9v0JeFp2imV",
+  },
   ssr: false,
 });
