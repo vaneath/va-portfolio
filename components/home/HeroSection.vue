@@ -1,8 +1,8 @@
 <template>
-  <div class="relative bg-gray-800 overflow-hidden">
+  <div class="max-w-screen-2xl mx-auto bg-gray-800 overflow-hidden">
     <div class="relative">
       <main>
-        <div class="mx-auto py-8 max-w-7xl">
+        <div class="mx-auto py-8">
           <div data-aos="zoom-in" class="lg:grid lg:grid-cols-12">
             <div
               class="px-4 sm:px-6 lg:border-r lg:border-dashed lg:border-gray-700 text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left lg:flex lg:items-center"

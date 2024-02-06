@@ -1,5 +1,5 @@
 <template>
-  <div class="grid place-items-center px-10 space-y-5">
+  <div class="max-w-screen-2xl mx-auto grid place-items-center px-10 space-y-5">
     <p
       class="mt-8 text-sm text-center text-white lowercase tracking-wide font-semibold sm:mt-10"
     >
