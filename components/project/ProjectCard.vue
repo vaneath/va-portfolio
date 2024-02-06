@@ -73,7 +73,7 @@ import type project from '~/config/project.config'; import type appConfig from
       <div class="">
         <img
           class="h-16 rounded-md"
-          :src="`https://api.multiavatar.com/${props.project._id}.png?apiKey=${runtimeConfig.multiAvatarApiKey}`"
+          :src="`https://api.multiavatar.com/${props.project._id}.png?apiKey`"
           alt="logo"
         />
       </div>
@@ -82,10 +82,6 @@ import type project from '~/config/project.config'; import type appConfig from
 </template>
 
 <script setup>
-const runtimeConfig = useRuntimeConfig();
-
-console.log(useRuntimeConfig.multiAvatarApiKey);
-
 const props = defineProps({
   project: {
     require: true,

@@ -2,7 +2,7 @@
   <nav
     class="bg-gray-800 backdrop-filter backdrop-blur sticky top-0 z-40 w-full"
   >
-    <div class="px-2 sm:px-4 lg:px-8">
+    <div class="px-2 sm:px-4 lg:px-8 max-w-screen-2xl mx-auto">
       <div class="relative flex items-center justify-between h-16">
         <div class="flex items-center px-2 lg:px-0">
           <nuxt-link to="/" class="flex-shrink-0">

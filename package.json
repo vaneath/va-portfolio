@@ -22,5 +22,8 @@
     "typewriter-effect": "^2.21.0",
     "vue": "^3.4.3",
     "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "nuxt-schema-org": "^3.3.4"
   }
 }
