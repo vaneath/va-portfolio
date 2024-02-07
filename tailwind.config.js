@@ -10,6 +10,7 @@ export default {
     extend: {
       colors: {
         "hot-pink": "#fd2d78",
+        "dark-blue": "#0671a4",
       },
     },
   },
