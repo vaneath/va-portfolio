@@ -1,6 +1,6 @@
 <template>
   <div
-    class="font-extrabold hover:text-hot-pink text-3xl animation-logo tracking-tighter text-yellow-600"
+    class="font-extrabold hover:text-hot-pink text-3xl animation-logo tracking-tighter text-primary-purple dark:text-primary-yellow"
   >
     {{ config.name[0].toLowerCase() }}
   </div>

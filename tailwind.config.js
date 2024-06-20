@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
+  darkMode: "media",
   content: [
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
@@ -9,10 +11,12 @@ export default {
   theme: {
     extend: {
       colors: {
+        "primary-yellow": "#eab308",
+        "primary-purple": "#6c63ff",
         "hot-pink": "#fd2d78",
         "dark-blue": "#0671a4",
       },
-    },
+    }
   },
   plugins: [
     function ({ addUtilities }) {

@@ -2,7 +2,9 @@
   <div>
     <header>
       <div data-aos="fade-up" class="text-center">
-        <h2 class="text-2xl tracking-tight font-extrabold text-gray-200">
+        <h2
+          class="text-2xl tracking-tight font-extrabold text-primary-purple dark:text-primary-yellow"
+        >
           {{ projectConfig.title }}
         </h2>
         <p class="mt-2 px-2 max-w-2xl mx-auto text-sm leading-7 text-gray-400">
@@ -22,8 +24,11 @@
           <template v-for="tech in techs" :key="tech">
             <button
               @click="currentTech = tech"
-              :class="{ 'bg-gray-900 text-gray-300': tech === currentTech }"
-              class="flex text-gray-300 focus:outline-none focus:ring-transparent focus:ring-offset-transparent hover:text-hot-pink px-3 py-2 font-medium text-sm rounded-xl"
+              :class="{
+                'dark:bg-primary-yellow bg-primary-purple text-white':
+                  tech === currentTech,
+              }"
+              class="flex dark:text-gray-300 focus:outline-none focus:ring-transparent focus:ring-offset-transparent hover:text-hot-pink px-3 py-2 font-medium text-sm rounded-xl"
             >
               {{ tech }}
             </button>

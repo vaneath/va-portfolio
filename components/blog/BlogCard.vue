@@ -4,14 +4,17 @@ import type { set } from 'nuxt/dist/app/compat/capi';
     to="/blogs/1"
     class="flex transition duration-700 ease-in-out transform hover:translate-y-0.5 hover:scale-105 flex-col rounded-xl shadow-lg overflow-hidden"
   >
-    <div v-if="config.image" class="hidden sm:flex flex-shrink-0 bg-gray-900">
+    <div
+      v-if="config.image"
+      class="hidden sm:flex flex-shrink-0 dark:bg-gray-900"
+    >
       <img
         class="h-36 w-full object-cover"
         :src="config.image"
         alt="Blog Image"
       />
     </div>
-    <div class="flex-1 bg-gray-900 p-5 flex flex-col justify-between">
+    <div class="flex-1 dark:bg-gray-900 p-5 flex flex-col justify-between">
       <div class="flex-1">
         <p class="text-xs font-medium text-hot-pink hover:text-hot-pink">
           <a href="#" class="hover:underline hover:text-hot-pink"> category </a>

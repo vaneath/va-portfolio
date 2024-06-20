@@ -3,6 +3,10 @@ import project from "./config/project.config";
 
 export default defineAppConfig({
   name: "vaneath",
+  contact: {
+    enabled: true,
+    name: "contact",
+  },
   blog: {
     enabled: false,
     name: "blogs",
