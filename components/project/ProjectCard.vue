@@ -1,10 +1,10 @@
-import type project from '~/config/project.config'; import type appConfig from
-'~/app.config';
 <template>
   <div
-    class="flex flex-col transition duration-700 ease-in-out transform hover:translate-y-0.5 hover:scale-105 rounded-xl shadow-lg overflow-hidden"
+    class="flex flex-col transition duration-700 ease-in-out transform hover:translate-y-0.5 hover:scale-105 rounded-xl shadow-md overflow-hidden"
   >
-    <div class="flex-1 bg-gray-900 p-5 flex flex-row justify-between">
+    <div
+      class="flex-1 bg-white dark:bg-gray-900 p-5 flex flex-row justify-between"
+    >
       <div class="flex-1 flex flex-col justify-between">
         <div>
           <div class="text-xs font-medium text-hot-pink hover:text-hot-pink">
@@ -16,7 +16,7 @@ import type project from '~/config/project.config'; import type appConfig from
           </div>
           <nuxt-link class="group" :to="props.project._path">
             <h3
-              class="mt-0.5 group-hover:text-yellow-500 text-md leading-7 font-semibold text-gray-200"
+              class="mt-0.5 group-hover:text-primary-purple dark:hover:text-primary-yellow text-md leading-7 font-semibold dark:text-gray-200"
             >
               {{ project.title }}
             </h3>
@@ -30,7 +30,7 @@ import type project from '~/config/project.config'; import type appConfig from
             target="_blank"
             rel="noreferrer"
             href="#"
-            class="hover:text-yellow-500 text-gray-600"
+            class="hover:text-primary-purple dark:hover:text-primary-yellow text-gray-600"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ import type project from '~/config/project.config'; import type appConfig from
             target="_blank"
             rel="noreferrer"
             href="#"
-            class="hover:text-yellow-500 text-gray-600"
+            class="hover:text-primary-purple dark:hover:text-primary-yellow text-gray-600"
           >
             <span class="sr-only">GitHub</span>
             <svg

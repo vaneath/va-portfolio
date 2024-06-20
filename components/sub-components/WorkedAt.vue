@@ -2,7 +2,7 @@
   <div>
     <p
       v-if="home.heroSection.workedAt.enabled"
-      class="mt-8 text-sm text-white lowercase tracking-wide font-semibold sm:mt-10"
+      class="mt-8 text-sm text-gray-800 dark:text-white lowercase tracking-wide font-semibold sm:mt-10"
     >
       Worked at
     </p>

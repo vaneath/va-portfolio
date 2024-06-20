@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-gray-800">
+  <footer>
     <div class="max-w-screen-2xl mx-auto px-4">
       <div class="pt-5 pb-12 md:flex md:items-center md:justify-between">
         <div class="flex justify-center space-x-6 md:order-2">
@@ -132,7 +132,7 @@
         >
           JUCIY music favors -
           <span
-            class="ceator-preview text-yellow-500 hover:text-hot-pink font-semibold"
+            class="ceator-preview text-primary-purple dark:text-primary-yellow hover:text-hot-pink font-semibold"
           >
             <a
               class="inline-block"

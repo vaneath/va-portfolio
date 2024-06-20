@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-800 overflow-hidden">
+  <div class="overflow-hidden">
     <HeroSection v-if="home.heroSection.enabled" />
     <GithubContribution v-if="home.githubContributions.enabled" />
   </div>

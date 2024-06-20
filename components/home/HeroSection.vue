@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-screen-2xl mx-auto bg-gray-800 overflow-hidden">
+  <div class="max-w-screen-2xl mx-auto overflow-hidden">
     <div class="relative">
       <main>
         <div class="mx-auto py-8">

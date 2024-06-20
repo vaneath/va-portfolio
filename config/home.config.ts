@@ -27,6 +27,7 @@ const home = {
       ],
     },
   },
+  name: "Home"
 };
 
 export default home;
