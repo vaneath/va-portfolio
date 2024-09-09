@@ -12,7 +12,7 @@ const home = {
       rightText: "take a look",
     },
     workedAt: {
-      enabled: true,
+      enabled: false,
       meta: [
         {
           name: "BookMe+",
