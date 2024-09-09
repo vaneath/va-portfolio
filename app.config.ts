@@ -13,7 +13,7 @@ export default defineAppConfig({
     route: "/blogs",
   },
   description:
-    "Hi, I'm Vaneath, a developer, guitarist, musician, programmer. I love to build things and solve problems. I'm currently working at BookMe+ as a junior full-stack developer, and also a student at the Cambodia Academy of Digital Technology.",
+    "Hi, I'm Vaneath, a developer, guitarist, musician, programmer. I love to build things and solve problems. I'm a junior full-stack developer, and also a student at the Cambodia Academy of Digital Technology.",
   domain: "vaneath.com",
   email: "vaneathzz@gmail.com",
   home: home,
