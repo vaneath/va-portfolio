@@ -21,7 +21,7 @@ export default defineAppConfig({
   image: "/images/vaneath.png",
   project: project,
   resume: {
-    enabled: true,
+    enabled: false,
     name: "resume",
     route: "/resume",
   },

@@ -48,26 +48,33 @@ export default defineNuxtConfig({
       viewport: "width=device-width, initial-scale=1",
     },
   },
+
   components: [
     "@/components",
     "@/components/home",
     "@/components/sub-components",
   ],
+
   css: ["~/assets/css/main.css"],
   devtools: { enabled: true },
   modules: ["@nuxt/content", "nuxt-schema-org"],
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
   runtimeConfig: {
     multiAvatarApiKey: "HyN9v0JeFp2imV",
   },
+
   site: {
     url: "https://vaneath.com",
     name: "Vaneath",
   },
+
   ssr: false,
+  compatibilityDate: "2024-09-09",
 });
